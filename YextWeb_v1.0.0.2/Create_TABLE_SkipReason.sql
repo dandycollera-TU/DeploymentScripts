@@ -21,3 +21,67 @@ ALTER TABLE [dbo].[SkipReason] ADD  CONSTRAINT [DF_SkipReason_CreatedBy]  DEFAUL
 GO
 
 
+
+
+
+INSERT INTO [dbo].[SkipReason]
+           ([ReasonCode]
+           ,[ReasonDescription]
+           ,[DateCreated])
+     VALUES
+           ('SK1'
+           ,'Professional Name'
+           ,GETDATE());
+
+
+INSERT INTO [dbo].[SkipReason]
+           ([ReasonCode]
+           ,[ReasonDescription]
+           ,[DateCreated])
+     VALUES
+           ('SK2'
+           ,'Listings with special and foreign characters  '
+           ,GETDATE());
+
+INSERT INTO [dbo].[SkipReason]
+           ([ReasonCode]
+           ,[ReasonDescription]
+           ,[DateCreated])
+     VALUES
+           ('SK3'
+           ,'GMB Task'
+           ,GETDATE());
+INSERT INTO [dbo].[SkipReason]
+           ([ReasonCode]
+           ,[ReasonDescription]
+           ,[DateCreated])
+     VALUES
+           ('SK4'
+           ,'Non - alphanumeric characters'
+           ,GETDATE());
+INSERT INTO [dbo].[SkipReason]
+           ([ReasonCode]
+           ,[ReasonDescription]
+           ,[DateCreated])
+     VALUES
+           ('SK5'
+           ,'Did not meet loading threshold'
+           ,GETDATE());
+INSERT INTO [dbo].[SkipReason]
+           ([ReasonCode]
+           ,[ReasonDescription]
+           ,[DateCreated])
+     VALUES
+           ('SK6'
+           ,'Task that should be escalated'
+           ,GETDATE());
+INSERT INTO [dbo].[SkipReason]
+           ([ReasonCode]
+           ,[ReasonDescription]
+           ,[DateCreated])
+     VALUES
+           ('SK7'
+           ,'Task error (Scanning Unavailable Exception, RPc Exception, Error 400)'
+           ,GETDATE());
+
+
