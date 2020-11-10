@@ -5,7 +5,7 @@ ALTER TABLE [dbo].[STG_Ticket]
 ADD [LineRemarks] nvarchar(100);
 
 ALTER TABLE [dbo].[STG_Ticket]
-ADD [BtchID] nvarchar(100);
+ADD [BatchID] nvarchar(100);
 
 ALTER TABLE [dbo].[STG_Ticket]
 ADD [LOB] varchar(50);
